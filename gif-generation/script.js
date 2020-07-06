@@ -12,9 +12,7 @@ function generateGif() {
   img_tab[3] = updateCanvas(35, ta.value)
   
   gifshot.createGIF({
-    'images': img_tab,
-    "gifWidth": 500,
-    "gifHeight": 500
+    'images': img_tab
   },function(obj) {
     if(!obj.error) {
       var image = obj.image,
